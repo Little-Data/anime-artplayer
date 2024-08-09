@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8">
+<title>ArtPlayer在线播放</title>
+<style>
+.artplayer-app {
+aspect-ratio: 16/9;
+}
+</style>
+</head>
+<body>
+<div class="artplayer-app"></div>
+<script src="https://unpkg.com/artplayer/dist/artplayer.js"></script>
+<script>
+var art = new Artplayer({
+    container: '.artplayer-app',
+    url: 'https://v16m-default.akamaized.net/5935c9c5ac6948d75f7438e0d4d7d49e/66b5fe25/video/tos/alisg/tos-alisg-ve-0051c001-sg/oYbM7DwxA9hISjSNUBgFEeMBQCOfz5fEUADIGI/?&mime_type=video_mp4',
+    type: 'mp4',
+    setting: true,
+    fullscreen: true,
+    fullscreenWeb: true,
+    autoSize: true,
+    flip: true,
+    playbackRate: true,
+    aspectRatio: true,
+    miniProgressBar: true,
+    lock: true,
+    fastForward: true,
+    autoPlayback: true,
+    icons: {
+        loading: '<img src="../../assets/img/ploading.gif">',
+        state: '<img width="150" heigth="150" src="../../assets/img/state.svg">',
+        indicator: '<img width="16" heigth="16" src="../../assets/img/indicator.svg">',
+    },
+});
+</script>
+</body>
